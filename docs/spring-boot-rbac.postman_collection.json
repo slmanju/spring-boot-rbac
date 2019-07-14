@@ -1,0 +1,53 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-boot-rbac",
+		"_postman_id": "4067e692-001f-72d6-284d-a0bb30e598a6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users - Get All",
+			"request": {
+				"url": "http://localhost:8080/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Save",
+			"request": {
+				"url": "http://localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"manjula\",\n\t\"password\": \"password\",\n\t\"firstName\": \"Manjula\",\n\t\"lastName\": \"Jayawardana\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Users - Get by id",
+			"request": {
+				"url": "http://localhost:8080/users/06bf0e0c-7568-4f8c-9736-28bbad1121b4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
